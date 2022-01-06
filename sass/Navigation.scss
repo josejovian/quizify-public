@@ -1,0 +1,116 @@
+@import 'Colors.scss';
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	font-family: Poppins;
+}
+
+#nav-logo {
+	padding: 32px 96px;
+
+	color: white;
+	font-size: 32px;
+	font-family: inherit;
+	font-weight: 700;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav-links {
+	display: flex;
+	padding: 40px 64px;
+	color: white;
+}
+
+#nav-links {
+	a, button {
+		display: flex;
+		align-content: center;
+		position: static;
+		padding: 0px 32px;
+		height: 100%;
+
+		color: inherit;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: inherit;
+		
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+	> a::after, > button::after {
+		display: block;
+		position: fixed;
+		content: '';
+		width: 0px;
+		height: 2px;
+		background-color: $lg-gray;
+		transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+		z-index: -1!important;
+	}
+	> a:hover::after, > button:hover::after {
+		width: 64px;
+		transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+}
+
+.material-icons {
+	font-size: 16px!important;
+}
+
+.nav-parent {
+	display: flex;
+	.material-icons-outlined {
+		position: relative;
+		right: 24px;
+	}
+}
+
+.nav-drop-content {
+	display: none;
+	// top: 5%;
+	opacity: 0;
+	margin: 0 0 0 32px;
+	position: absolute;
+	font-family: Poppins;
+	padding: 8px 0px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+    color: white;
+	background-color: $lg-black;
+	div {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	li {
+		width: 100%!important;
+		list-style-type: none;
+		a, button {
+			line-height: 2rem!important;
+		}
+	}
+	li:hover {
+		background-color: $md-gray!important;
+	}
+	li:active {
+		background-color: $lg-gray!important;
+	}
+}
+
+.nav-drop:hover {
+	.nav-drop-content {
+		display: block!important;
+		opacity: 1;
+		a#logout {
+			padding: 0!important;
+		}
+	}
+}

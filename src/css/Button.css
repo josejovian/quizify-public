@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+.hidden {
+  display: none !important;
+}
+
+span.material-icons {
+  margin: auto auto !important;
+  padding: 0 !important;
+}
+
+.btn {
+  background-color: #60626c;
+  border: 1px solid #60626c;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid #60626c;
+  border-radius: 2px;
+  line-height: 20px;
+  transition: all 0.2s;
+  color: white;
+}
+.btn .btn-text-left {
+  margin-left: 8px;
+}
+.btn .btn-text-right {
+  margin-right: 8px;
+}
+
+.btn {
+  background-color: #60626c;
+  border: 1px solid #60626c;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #4d4e56;
+  border: 1px solid #4d4e56;
+}
+
+.btn:active {
+  cursor: pointer;
+  background-color: #3a3b41;
+  border: 1px solid #3a3b41;
+}
+
+.btn-validation {
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.btn-validation:hover {
+  cursor: pointer;
+  background-color: #25a35a;
+  border: 1px solid #25a35a;
+}
+
+.btn-validation:active {
+  cursor: pointer;
+  background-color: #1c7a44;
+  border: 1px solid #1c7a44;
+}
+
+.btn-info {
+  background-color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.btn-info:hover {
+  cursor: pointer;
+  background-color: #217bb8;
+  border: 1px solid #217bb8;
+}
+
+.btn-info:active {
+  cursor: pointer;
+  background-color: #185d8a;
+  border: 1px solid #185d8a;
+}
+
+.btn-error {
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.btn-error:hover {
+  cursor: pointer;
+  background-color: #cf2b1a;
+  border: 1px solid #cf2b1a;
+}
+
+.btn-error:active {
+  cursor: pointer;
+  background-color: #9b2013;
+  border: 1px solid #9b2013;
+}
+
+.round {
+  border-radius: 32px !important;
+}
+
+.material-icons {
+  font-family: "Material Icons", "Poppins" !important;
+  font-weight: 700;
+  font-size: 1.2em;
+  align-self: baseline;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  align-self: center;
+  font-size: 16px;
+}
+
+.no-shadow, .outline, .wrong, .wrong:hover, .correct, .correct:hover, .dark-blue, .text, .text:hover, .text-hover, .outline:hover, .outline-hover {
+  box-shadow: none;
+}
+
+.btn:disabled {
+  background-color: #60626c;
+  border: 1px solid #60626c;
+  background-color: #2e2f33;
+  border: 1px solid #2e2f33;
+  cursor: unset;
+}
+
+.outline {
+  color: #E1D9D1;
+  box-shadow: none;
+  border: 1px solid #E1D9D1;
+  background-color: inherit;
+}
+
+.outline:hover, .outline-hover {
+  color: #1e1f22;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.outline:active {
+  background-color: #E1D9D1;
+  box-shadow: 0px 2px 4px black;
+}
+
+.text, .text:hover, .text-hover {
+  border: none;
+  background-color: white;
+  color: rgba(96, 102, 208, 0.7);
+}
+
+.text:hover, .text-hover {
+  background: #0039CB;
+}
+
+.long {
+  width: 100%;
+  text-align: center;
+}
+
+.medium {
+  width: 50%;
+  text-align: center;
+}
+
+.short {
+  width: 25%;
+}
+
+.short span {
+  margin: 0 auto;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.center {
+  align-self: center;
+}
+
+.blue {
+  border-color: #3498db;
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.blue:hover {
+  border-color: #2980b9;
+  background-color: #2980b9;
+  color: white;
+}
+
+.dark-blue {
+  border-color: #1D355D;
+  color: #1D355D;
+}
+
+.correct, .correct:hover {
+  background-color: #60BF88;
+  border-color: #60BF88;
+  color: #444;
+}
+
+.wrong, .wrong:hover {
+  background-color: #EA8282;
+  border-color: #EA8282;
+  color: #444;
+}
+
+@media screen and (max-width: 800px) {
+  .short {
+    width: 33%;
+  }
+}
+/*# sourceMappingURL=Button.css.map */

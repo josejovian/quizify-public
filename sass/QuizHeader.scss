@@ -1,0 +1,60 @@
+// Top Navigation Bar for Quiz Stats.
+
+header {
+	position: sticky!important;
+    top: -80px;
+}
+
+header h1 {
+    position: static!important;
+}
+
+#header-card {
+    display: flex;
+    position: sticky!important;
+    width: calc(100% - 64px);
+    align-items: center;
+    justify-content: space-between;
+    div  {
+        display: flex;
+        button:not(:first-child), a {
+            margin-left: 16px;
+        }
+        // button, a {
+            // object-fit: cover!important;
+            span {
+                margin-top: 2px!important;
+                margin-bottom: 2px!important;
+            }
+        // }
+    }
+    div.header-column {
+        position: relative;
+        display: flex;
+        span {
+            font-size: 1.6rem;
+            margin-right: 8px;
+        }
+        span.header-column-text{
+            font-size: 1rem;
+        }
+        span.header-column-number {
+            font-family: 'Ubuntu Mono'!important;
+        }
+        span.header-column-caption {
+            align-self: center;
+            margin-left: 4px;
+            height: min-content;
+            font-size: 0.75rem!important;
+        }
+    }
+}
+
+.header-full {
+    padding: 0;
+    z-index: 4;
+    #header-card {
+        border-radius: 0px!important;
+    }
+}
+

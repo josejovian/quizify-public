@@ -1,0 +1,21 @@
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  font-family: Poppins;
+}
+#landing h1 {
+  font-size: 4rem;
+}
+#landing p {
+  font-size: 2rem;
+  text-align: center;
+}

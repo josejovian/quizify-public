@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+$dk-black: #0c0c0e;
+$lg-black: #1e1f22;
+$md-gray: #393E46;
+$dk-gray: #2e2f33;
+$lg-gray: #60626c;
+$md-white: #E1D9D1;
+
+$validation: #2ecc71;
+$validation-1: #27ae60;
+$info: #3498db;
+$info-1: #2980b9;
+$error: #e74c3c;
+$error-1: #c0392b;
+$danger: #f1c40f;
+$danger-1: #f39c12;
+
+.hidden {
+	display: none!important;
+}
+
+span.material-icons {
+	margin: auto auto!important;
+	padding: 0!important;
+}

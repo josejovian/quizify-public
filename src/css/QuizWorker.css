@@ -1,0 +1,6 @@
+#modal-background {
+  display: flex;
+}
+#modal-background textarea {
+  resize: none;
+}

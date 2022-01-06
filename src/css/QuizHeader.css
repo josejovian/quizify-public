@@ -1,0 +1,54 @@
+header {
+  position: sticky !important;
+  top: -80px;
+}
+
+header h1 {
+  position: static !important;
+}
+
+#header-card {
+  display: flex;
+  position: sticky !important;
+  width: calc(100% - 64px);
+  align-items: center;
+  justify-content: space-between;
+}
+#header-card div {
+  display: flex;
+}
+#header-card div button:not(:first-child), #header-card div a {
+  margin-left: 16px;
+}
+#header-card div span {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+#header-card div.header-column {
+  position: relative;
+  display: flex;
+}
+#header-card div.header-column span {
+  font-size: 1.6rem;
+  margin-right: 8px;
+}
+#header-card div.header-column span.header-column-text {
+  font-size: 1rem;
+}
+#header-card div.header-column span.header-column-number {
+  font-family: "Ubuntu Mono" !important;
+}
+#header-card div.header-column span.header-column-caption {
+  align-self: center;
+  margin-left: 4px;
+  height: min-content;
+  font-size: 0.75rem !important;
+}
+
+.header-full {
+  padding: 0;
+  z-index: 4;
+}
+.header-full #header-card {
+  border-radius: 0px !important;
+}

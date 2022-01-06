@@ -1,0 +1,39 @@
+@import '~quill/dist/quill.snow.css';
+@import 'Colors.scss';
+
+html, #root, .App, body {
+	padding: 0!important;
+	margin: 0!important;
+}
+h1 {
+	margin: 32px 0;
+	color: white;
+	font-family: Poppins;
+	font-weight: 600;
+	text-align: center;
+}
+
+h2 {
+	margin: 32px 0;
+	color: white;
+  
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+}
+
+@media screen and (max-width: 1334px) {
+	.question-card {
+		width: calc(calc(100% - 256px + 96px)/2)!important;
+		margin: 0 0px 32px 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.question-card {
+		width: 100%!important;
+		margin: 0 0px 32px 0;
+	}
+
+}

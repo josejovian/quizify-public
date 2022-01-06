@@ -1,0 +1,238 @@
+@use "sass:color";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu+Mono&display=swap");
+@import './Colors.scss';
+
+@mixin btn-theme($theme: "default") {
+    @if $theme == "validation" {
+        background-color: $validation;
+        border: 1px solid $validation;
+    } @else if $theme == "error" {
+        background-color: $error;
+        border: 1px solid $error;
+    } @else if $theme == "info" {
+        background-color: $info;
+        border: 1px solid $info;
+    } @else if $theme == "danger" {
+        background-color: $danger;
+        border: 1px solid $danger;
+    } @else {
+        background-color: $lg-gray;
+        border: 1px solid $lg-gray;
+    }
+}
+
+$hover-rate: -20%;
+$active-rate: -40%;
+
+@mixin btn-hover-theme($theme: "default") {
+    cursor: pointer;
+    @if $theme == "validation" {
+        background-color: color.scale($validation, $lightness: $hover-rate);
+        border: 1px solid color.scale($validation, $lightness: $hover-rate);
+    } @else if $theme == "error" {
+        background-color: color.scale($error, $lightness: $hover-rate);
+        border: 1px solid color.scale($error, $lightness: $hover-rate);
+    } @else if $theme == "info" {
+        background-color: color.scale($info, $lightness: $hover-rate);
+        border: 1px solid color.scale($info, $lightness: $hover-rate);
+    } @else if $theme == "danger" {
+        background-color: color.scale($danger, $lightness: $hover-rate);
+        border: 1px solid color.scale($danger, $lightness: $hover-rate);
+    } @else {
+        background-color: color.scale($lg-gray, $lightness: $hover-rate);
+        border: 1px solid color.scale($lg-gray, $lightness: $hover-rate);
+    }
+}
+
+@mixin btn-active-theme($theme: "default") {
+    cursor: pointer;
+    @if $theme == "validation" {
+        background-color: color.scale($validation, $lightness: $active-rate);
+        border: 1px solid color.scale($validation, $lightness: $active-rate);
+    } @else if $theme == "error" {
+        background-color: color.scale($error, $lightness: $active-rate);
+        border: 1px solid color.scale($error, $lightness: $active-rate);
+    } @else if $theme == "info" {
+        background-color: color.scale($info, $lightness: $active-rate);
+        border: 1px solid color.scale($info, $lightness: $active-rate);
+    } @else if $theme == "danger" {
+        background-color: color.scale($danger, $lightness: $active-rate);
+        border: 1px solid color.scale($danger, $lightness: $active-rate);
+    } @else {
+        background-color: color.scale($lg-gray, $lightness: $active-rate);
+        border: 1px solid color.scale($lg-gray, $lightness: $active-rate);
+    }
+}
+
+.btn {
+    @include btn-theme;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 14px;
+    padding: 8px 16px;
+    font-family: "Poppins", sans-serif;
+    // background: $lg-gray;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    border: 1px solid $lg-gray;
+    border-radius: 2px;
+    line-height: 20px;
+    transition: all 0.2s;
+    color: white;
+    .btn-text-left {
+        margin-left: 8px;
+    }
+    .btn-text-right {
+        margin-right: 8px;
+    }
+}
+
+.btn { @include btn-theme() }
+.btn:hover { @include btn-hover-theme(); }
+.btn:active { @include btn-active-theme(); }
+
+.btn-validation { @include btn-theme("validation") }
+.btn-validation:hover { @include btn-hover-theme("validation"); }
+.btn-validation:active { @include btn-active-theme("validation"); }
+
+.btn-info { @include btn-theme("info") }
+.btn-info:hover {@include btn-hover-theme("info"); } 
+.btn-info:active { @include btn-active-theme("info"); }
+
+.btn-error { @include btn-theme("error") }
+.btn-error:hover { @include btn-hover-theme("error"); }
+.btn-error:active { @include btn-active-theme("error"); }
+
+.round {
+    border-radius: 32px!important;
+}
+
+.material-icons {
+    font-family: "Material Icons", "Poppins" !important;
+    font-weight: 700;
+    font-size: 1.2em;
+    align-self: baseline;
+}
+
+.material-icons-outlined {
+    font-family: "Material Icons Outlined";
+    font-weight: normal;
+    align-self: center;
+    font-size: 16px;
+}
+
+.no-shadow, .outline, .wrong, .wrong:hover, .correct, .correct:hover, .dark-blue, .text, .text:hover, .text-hover, .outline:hover, .outline-hover {
+    box-shadow: none;
+}
+
+.btn:disabled {
+    @include btn-theme;
+    background-color: $dk-gray;
+    border: 1px solid $dk-gray;
+    cursor: unset;
+}
+
+// .btn:hover {
+//     @include btn-hover-theme;
+
+// }
+
+// .btn:active {
+//     box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+//     border-color: $dk-gray;
+//     background-color: $dk-gray;
+// }
+
+.outline {
+    color: $md-white;
+    box-shadow: none;
+    border: 1px solid $md-white;
+    background-color: inherit;
+}
+
+.outline:hover, .outline-hover {
+    color: $lg-black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.outline:active {
+    background-color: $md-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text, .text:hover, .text-hover {
+    border: none;
+    background-color: white;
+    color: rgba(96, 102, 208, 0.7);
+}
+
+.text:hover, .text-hover {
+    background: #0039CB;
+}
+
+.long {
+    width: 100%;
+    text-align: center;
+}
+
+.medium {
+    width: 50%;
+    text-align: center;
+}
+
+.short {
+    width: 25%;
+}
+
+.short span {
+    margin: 0 auto;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+.center {
+    align-self: center;
+}
+
+.blue {
+    border-color: #3498db;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.blue:hover {
+    border-color: #2980b9;
+    background-color: #2980b9;
+    color: white;
+}
+
+
+.dark-blue {
+    border-color: #1D355D;
+    color: #1D355D;
+}
+
+.correct, .correct:hover {
+    background-color: #60BF88;
+    border-color: #60BF88;
+    color: #444;
+}
+
+.wrong, .wrong:hover {
+    background-color: #EA8282;
+    border-color: #EA8282;
+    color: #444;
+}
+
+@media screen and (max-width: 800px) {
+    .short {
+        width: 33%;
+    }
+}
+
+/*# sourceMappingURL=Button.css.map */

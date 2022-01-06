@@ -1,0 +1,19 @@
+@use "sass:color";
+
+@import 'Colors.scss';
+
+.correct-choice {
+    background-color: color.adjust($validation, $blackness: 40%)!important;
+}
+
+.wrong-choice {
+    background-color: color.adjust($error, $blackness: 40%)!important;
+}
+
+.choice-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+}

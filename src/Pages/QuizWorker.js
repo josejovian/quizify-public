@@ -26,10 +26,13 @@ import '../css/Questions.css';
 import '../css/QuizWorker.css';
 
 function QuizSubmitModal() {
+	setTimeout(() => {
+		window.location.href = "/";
+	}, 3000);
 	return (
 		<>
 			<h3>You're Done!</h3>
-			<p>You can check your graded work in the <b>Quiz &gt; Your Works</b> menu.</p>
+			<p>You will soon be redirected to main menu in 3 seconds. You can check your graded work in the <b>Quiz &gt; Your Works</b> menu.</p>
 		</>
 	)
 }

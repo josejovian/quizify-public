@@ -119,7 +119,6 @@ export default function Collection(props) {
 								pathname: "/work/" + quiz.absoluteIndex,
 								state: { quiz: currentQuizzes }
 							}}
-							target="_blank"
 						>
 							<Button variant="btn-info" text="Work"/>
 						</Link>
@@ -132,7 +131,6 @@ export default function Collection(props) {
 								pathname: "/work/" + quiz.absoluteIndex,
 								state: { quiz: currentQuizzes }
 							}}
-							target="_blank"
 						>
 							<Button variant="btn-info" text="Work"/>
 						</Link>

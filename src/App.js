@@ -177,15 +177,15 @@ export function showModalNotice(code) {
 
 	switch(code) {
 		case 'GUEST_ACCESS':
-			title = "Hey There...";
+			title = "Error!";
 			content = "You must be logged in to access this feature."
 			break;
 		case 'OWNER_MISMATCH':
-			title = "Hey There...";
+			title = "Error!";
 			content = "You do not own this content, so you cannot access it.";
 			break;
 		default:
-			title = "What?";
+			title = "404 Not Found";
 			content = "That content could not be found.";
 			break;
 	}
